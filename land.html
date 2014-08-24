@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>my landing page</title>
+<link rel="stylesheet"type="text/css" href="3rd_party/bootstrap-3.1.1-dist/css/bootstrap.css">
+<link rel="stylesheet"type="text/css" href="css/style.css">
+<script src="3rd_party/jquery/jquery-2.1.1.min.js"></script>
+<script src="3rd_party/scrollNav.js/jquery.scrollNav.min.js"></script>
+<script src="js/nav.js"></script>
+
+</head>
+
+<body>
+
+<script>
+function change_background(id)
+{
+	// for (i = 1; i < 4; ++i)
+	// 	document.getElementById(i).style.backgroundColor = "gray";
+
+	// document.getElementById(id).style.backgroundColor = "white";
+
+}
+
+</script>
+
+<ul class="ulbox" id="nav">
+
+<li class="licircle"><a href="#section1"><div id="1" class="circle" onClick="change_background(this.id)" ></div></a></li>
+<li class="licircle"><a href="#section2"><div id="2" class="circle" onClick="change_background(this.id)" ></div></a></li>
+<li class="licircle"><a href="#section3"><div id="3" class="circle" onClick="change_background(this.id)" ></div></a></li>
+
+</ul>
+
+
+<div id="section1" class="container-fluid">
+	<div class="row">
+		<div class="navigation">
+			<a style="margin-right: 50px;" href="#section2">фото</a>
+			<a style="margin-right: 50px;" href="#section3">видео</a>
+			<a style="margin-right: 50px;" href="#section4">инфо</a>
+		</div>
+		<center id="slide1"><video autoplay muted loop id="bgvid">
+			  <source src="video/pvg.mp4" type="video/mp4">
+		</video></center>
+	</div>
+
+	<div class="row">
+		<div class="slide" id="slide2">
+			<hr>
+			<center><h1 id="section2">Фотографии</h1></center>
+			<!-- <hr> -->
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4">
+					<img src="images/papalars_9771422564.jpg">
+				</div>
+				<div class="col-md-4">
+					<img src="images/papalars_9771422564.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<!-- <hr> -->
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4">
+					<img src="images/papalars_9771422564.jpg">
+				</div>
+				<div class="col-md-4">
+					<img src="images/papalars_9771422564.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="slide" id="slide2">
+			<hr>
+			<center><h1 id="section3">Видео</h1></center>
+			<!-- <hr> -->
+						
+			<div class="row">
+					<div class="col-md-offset-2 col-md-4">
+						<center><iframe class="vimeo" width="500" height="281" src="http://player.vimeo.com/video/71157931" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+					</div>
+					<div class="col-md-4">
+						<center><iframe class="vimeo" width="500" height="281" src="http://player.vimeo.com/video/99184647" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="slide" id="slide3">
+			<hr>
+			<center><h1 id="section4">Информация</h1></center>
+			<!-- <hr> -->
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4">
+					<center><img src="images/butov.jpg"></center>
+				</div>
+				<div class="col-md-4">
+					<center><img src="images/butov.jpg"></center>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	
+
+</div>
+
+<script>
+$(document).ready(function() {
+	$('#nav').onePageNav();
+});
+</script
+
+</body>
+</html> 
