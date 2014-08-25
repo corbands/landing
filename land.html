@@ -8,6 +8,8 @@
 <script src="3rd_party/jquery/jquery-2.1.1.min.js"></script>
 <script src="3rd_party/scrollNav.js/jquery.scrollNav.min.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/jquerycarousel.js"></script>
+<script src="js/carousel.js"></script>
 
 </head>
 
@@ -36,7 +38,7 @@ function change_background(id)
 
 <div id="section1" class="container-fluid">
 	<div class="row">
-		<div class="navigation">
+		<div class="navigation2">
 			<a style="margin-right: 50px;" href="#section2">фото</a>
 			<a style="margin-right: 50px;" href="#section3">видео</a>
 			<a style="margin-right: 50px;" href="#section4">инфо</a>
@@ -51,7 +53,53 @@ function change_background(id)
 			<hr>
 			<center><h1 id="section2">Фотографии</h1></center>
 			<!-- <hr> -->
+ 			<div class="connected-carousels">
+                <div class="stage">
+                    <div class="carousel carousel-stage">
+                        <ul>
+                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
+                          	<li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+            	</div>
+
+                <div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation">
+                        <ul>
+                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
+   	                        <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--
 			<div class="row">
+				<div class="jcarousel">
+					<ul>
+					
+					<li><img src="images/papalars_9771422564.jpg"></li>
+					<li><img src="images/papalars_9771422564.jpg"></li>
+					<li><img src="images/papalars_9771422564.jpg"></li>
+					<li><img src="images/papalars_9771422564.jpg"></li>
+
+
+					</ul>
+				</div>
+			</div>-->
+			<!-- <div class="row">
 				<div class="col-md-offset-2 col-md-4">
 					<img src="images/papalars_9771422564.jpg">
 				</div>
@@ -61,7 +109,6 @@ function change_background(id)
 			</div>
 			<div class="row">
 				<div class="col-md-offset-2 col-md-8">
-					<!-- <hr> -->
 					<br>
 				</div>
 			</div>
@@ -72,7 +119,7 @@ function change_background(id)
 				<div class="col-md-4">
 					<img src="images/papalars_9771422564.jpg">
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
@@ -116,7 +163,16 @@ function change_background(id)
 $(document).ready(function() {
 	$('#nav').onePageNav();
 });
+
+// $(function() {
+//     $('.jcarousel').jcarousel({
+//         // Configuration goes here
+//     });
+// });
+
 </script
+
+
 
 </body>
 </html> 
