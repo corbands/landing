@@ -5,11 +5,11 @@
 <title>my landing page</title>
 <link rel="stylesheet"type="text/css" href="3rd_party/bootstrap-3.1.1-dist/css/bootstrap.css">
 <link rel="stylesheet"type="text/css" href="css/style.css">
+<link rel="stylesheet"type="text/css" href="js/jquery.bxslider/jquery.bxslider.css">
 <script src="3rd_party/jquery/jquery-2.1.1.min.js"></script>
 <script src="3rd_party/scrollNav.js/jquery.scrollNav.min.js"></script>
 <script src="js/nav.js"></script>
-<script src="js/jquerycarousel.js"></script>
-<script src="js/carousel.js"></script>
+<script src="js/jquery.bxslider/jquery.bxslider.js"></script>
 
 </head>
 
@@ -52,39 +52,15 @@ function change_background(id)
 		<div class="slide" id="slide2">
 			<hr>
 			<center><h1 id="section2">Фотографии</h1></center>
+
+			<ul class="bxslider">
+				<li><img src="images/papalars_9771422564.jpg"></li>
+				<li><img src="images/papalars_8994149616.jpg"></li>
+				<li><img src="images/dexxus_5653503758.jpg"></li>
+				<li><img src="images/dexxus_5626316429.jpg"></li>
+			</ul>
+
 			<!-- <hr> -->
- 			<div class="connected-carousels">
-                <div class="stage">
-                    <div class="carousel carousel-stage">
-                        <ul>
-                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
-                          	<li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="600" height="400" alt=""></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
-                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
-            	</div>
-
-                <div class="navigation">
-                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
-                    <a href="#" class="next next-navigation">&rsaquo;</a>
-                    <div class="carousel carousel-navigation">
-                        <ul>
-                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
-   	                        <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="images/papalars_9771422564.jpg" width="50" height="50" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
             <!--
 			<div class="row">
 				<div class="jcarousel">
@@ -164,11 +140,9 @@ $(document).ready(function() {
 	$('#nav').onePageNav();
 });
 
-// $(function() {
-//     $('.jcarousel').jcarousel({
-//         // Configuration goes here
-//     });
-// });
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
 
 </script
 
